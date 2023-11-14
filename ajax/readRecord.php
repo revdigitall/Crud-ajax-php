@@ -13,7 +13,7 @@
 							<th></th>
 						</tr>';
 
-	$query = "SELECT * FROM matriculaobs";
+	$query = "SELECT * FROM matriculaobs ORDER BY idobs DESC";
 
 	if (!$result = mysqli_query($con, $query)) {
         exit(mysqli_error($con));
